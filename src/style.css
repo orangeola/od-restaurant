@@ -1,3 +1,50 @@
+* { 
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+    --footerHeight: 50px;
+    --headerHeight: 70px;
+}
+
 body {
+    height: 100vh;
+}
+
+#header {
+    min-width: 100%;
     background-color: black;
+    height: var(--headerHeight);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#info {
+    min-height: calc(100vh - (var(--headerHeight) + var(--footerHeight)));
+    min-width: 100%;
+}
+
+#footer {
+    height: var(--footerHeight);
+    background-color: grey;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home, #menu, #contact {
+    background-color: aqua;
+    height: 33.3%;
+    border-radius: 10px;
+    width: 100px;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
