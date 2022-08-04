@@ -6,6 +6,8 @@
 
     --footerHeight: 50px;
     --headerHeight: 70px;
+
+    overflow-x: hidden;
 }
 
 body {
@@ -28,6 +30,21 @@ body {
     min-width: 100%;
 }
 
+#mainInfo {
+    padding: 10px;
+    width: 800px;
+    margin: 0 auto;
+    background-color:brown;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #footer {
     height: var(--footerHeight);
     background-color: grey;
@@ -47,4 +64,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    user-select: none;
+}
+
+#eskImg {
+    height: 100px;
+    width: 100px;
+}
+
+.current {
+    pointer-events: none;
+    filter: brightness(50%);
 }
